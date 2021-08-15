@@ -1,0 +1,10 @@
+let cities = ['Albany','Troy','Schenectady','Cohoes','NYC','Poughkeepsie','Yonkers','Ossinning','New Rochelle','Buffalo','Syracuse','Rochester','Saratoga'];
+let numCities = cities.length;
+let randInt1 = Math.floor(Math.random()*numCities);
+let randCity1 = cities[randInt1];
+cities.splice(randInt1, 1);
+numCities = cities.length;
+let randInt2 = Math.floor(Math.random()*numCities);
+let randCity2 = cities[randInt2];
+console.log(randCity1,randCity2);
+console.log(`Alert! a tornado warning is in effect for the following cities: ${randCity1}, ${randCity2}`);
